@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Textos Largos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Plataforma de Textos Largos</h1>
+    </header>
+    <main>
+        <section id="upload-section">
+            <h2>Subir un Texto Largo</h2>
+            <form id="upload-form">
+                <label for="title">Título:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="content">Contenido:</label>
+                <textarea id="content" name="content" rows="20" required></textarea>
+
+                <button type="submit">Subir</button>
+            </form>
+        </section>
+        <section id="texts-section">
+            <h2>Textos Subidos</h2>
+            <div id="texts-container">
+                <!-- Los textos subidos aparecerán aquí -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
